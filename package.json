@@ -1,0 +1,31 @@
+{
+  "name": "bank-joy-automation-framework",
+  "version": "1.0.0",
+  "description": "API automation framework using Jest and SuperTest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config=jest.config.js"
+  },
+  "dependencies": {
+    "supertest": "^6.3.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-html-reporters": "^3.1.7"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "jest-html-reporters",
+        {
+          "publicPath": "./reports",
+          "filename": "report.html",
+          "expand": true
+        }
+      ]
+    ]
+  },
+  "author": "Sai Prasanna Dopathi",
+  "license": ""
+}
